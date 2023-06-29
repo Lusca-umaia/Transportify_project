@@ -29,7 +29,7 @@ export default function CardComponent({ objectData, index, deleteItem }: { objec
 
 
     return (
-        <Card sx={{ maxWidth: '380px' }} className='card'>
+        <Card sx={{ maxWidth: '380px' }} className='card' style={{overflow: 'visible'}}>
             <CardContent className='card_Content'>
                 <Typography gutterBottom variant="h5" component="div" className='inforTitle'>
                     Informações Gerais
