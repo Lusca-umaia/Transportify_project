@@ -1,0 +1,46 @@
+.containerRegister {
+    width: 100%;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .buttonSubmit {
+        padding: 8px 50px;
+        font-size: 1.2em;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        border: 3px solid #000;
+        border-radius: 8px;
+        transition: .7s all;
+
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: #000;
+            color: #FFBB33;
+        }
+
+        &:disabled {
+            background-color: transparent;
+            color: #000;
+            opacity: .4;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .containerRegister {
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+    }
+
+}

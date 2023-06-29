@@ -1,0 +1,142 @@
+nav {
+    padding: 15px;
+    width: 70px;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .7s all;
+    justify-content: space-between;
+    background-color: #000;
+
+    span {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #FFBB33;
+    }
+
+    .groupHeader {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+
+        .menuButton {
+            width: 100%;
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+            height: 50px;
+
+            div {
+                position: absolute;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                height: 55px;
+                background-color: #eee;
+                cursor: pointer;
+
+                svg {
+                    transition: .5s all;
+                    transform: rotate(540deg);
+                }
+
+                #Arrow_active {
+                    transform: rotate(0deg);
+
+                }
+            }
+
+        }
+
+        .groupLinks {
+
+            ul {
+                gap: 15px;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+
+                    div {
+                        cursor: pointer;
+                        display: flex;
+                        width: 270px;
+                        border-radius: 10px;
+                        background-color: #eee;
+                        align-items: center;
+                        gap: 0;
+                        transition: .6s all;
+
+                        &:hover {
+                            transform: scale(1.025);
+                        }
+
+                        label {
+                            cursor: pointer;
+                            color: #000;
+                            padding-left: 15px;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            padding-bottom: 5px;
+                            list-style: none;
+                            font-size: 1.2em;
+                            font-weight: 700;
+                            transition: .4s all;
+                        }
+
+                        li {
+                            border-radius: 10px;
+                            list-style: none;
+                            color: #000;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #eee;
+                            transition: .6s all;
+
+                            svg {
+                                font-size: 2em;
+                            }
+                        }
+                    }
+
+                    #activeNavLink {
+                        background-color: #FFBB33;
+
+                        label {
+                            color: #fff;
+                        }
+
+                        li {
+                            background-color: #FFBB33;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Logo {
+        width: 45px;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
+#Nav_active {
+    width: 300px;
+}
